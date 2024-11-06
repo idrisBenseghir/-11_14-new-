@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Climate Action Collaboration System</title>
+</head>
+
+<div>
+    <a href="homePage.html">
+        <div>
+            <p><b>Home</b></p>
+        </div>
+    </a>
+    <a href="HistoryPage.html">
+        <div>
+            <p>History</p>
+        </div>
+    </a>
+    <a href="">
+        <div>
+            <p>Join Discussion</p>
+        </div>
+    </a>
+    <button onclick="showLoginPopup()">Login</button>
+</div>
+
+<!-- Login Popup -->
+<div id="loginPopup">
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="password"><br><br><br>Password:</label>
+        <input type="password" id="password" required><br>
+        <button type="button" onclick="checkLogin()">Login</button>
+    </form>
+    <button onclick="closeLoginPopup()">X</button>
+</div>
+
+<body>
+    <div>
+        <marquee>
+            <b>Our mission is to create a platform that fosters collaboration, inspires innovation, and empowers individuals and organizations to take meaningful steps toward a more sustainable future.</b>
+        </marquee>
+        <h1>Climate Action Collaboration System</h1>
+
+        <div>
+            <div>1 / 3</div>
+            <img src="Pictures/i1.jpg">
+        </div>
+        <div>2 / 3</div>
+        <img src="Pictures/i2.jpg">
+        <div>3 / 3</div>
+        <img src="Pictures/i3.jpg">
+    </div>
+
+    <h2>Our Journey Towards Sustainable Collaboration</h2>
+    <p>
+        Welcome to a platform born out of a shared vision for a sustainable future. The Climate Action Collaboration System was conceived in 2023 by a group of passionate individuals determined to make a meaningful impact in the fight against climate change. Frustrated by the fragmented efforts in addressing environmental challenges, we envisioned a platform that could unite diverse stakeholders, fostering collaboration and innovation. Our platform is set to evolve into a dynamic hub where stakeholders from various backgrounds, industries, and regions converge to drive climate action.
+        Today, we stand as a testament to the power of collective action. Together, we've facilitated groundbreaking projects, shared invaluable knowledge, and forged lasting partnerships. Join us in our mission to create a sustainable future. The journey continues, and your contribution matters.
+    </p>
+
+    <h2>Search for projects</h2>
+    <div>
+        <input type="text" id="searchInput" placeholder="Search projects...">
+        <button id="searchButton" onclick="searchProjects()">Search</button>
+        <button id="refreshButton" onclick="refreshResults()">Clear</button>
+    </div>
+    <div id="resultsContainer"></div>
+</body>
+</html>
