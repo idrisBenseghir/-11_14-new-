@@ -3,66 +3,141 @@
 <head>
     <meta charset="utf-8">
     <title>Climate Action Collaboration System</title>
+    
 </head>
+<div class="header-tab">
+  <a href="Home.html">
+    <div class="header-tab-button">
+      <div class="textAllignment-header-tab">
+        <p style="margin: auto;"><b>Home</b></p>
+      </div>
+    </div>
+  </a>
+  <a href="History.html">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">History</p>
+      </div>
+    </div>
+  </a>
+  <a href="initiate.html">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Initiate Project</p>
+      </div>
+    </div>
+  </a>
+  <a href="">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Join Project</p>
+      </div>
+    </div>
+  </a>
+  <a href="">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Manage Project</p>
+      </div>
+    </div>
+  </a>
+  <a href="">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Manage Funding</p>
+      </div>
+    </div>
+  </a>
+  <a href="">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Manage Team</p>
+      </div>
+    </div>
+  </a>
+  <a href="">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Track Budget</p>
+      </div>
+    </div>
+  </a>
+  <a href="">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Interact</p>
+      </div>
+    </div>
+  </a>
+  <a href="homePage.html">
+    <div class="header-tab-button2">
+      <div class="textAllignment-header-tab2">
+        <p style="margin: auto;">Log Out</p>
+      </div>
+    </div>
+  </a>
+</div>
+
 <body>
-
-    <h1>Climate Action Collaboration System</h1>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="History.html">History</a></li>
-            <li><a href="initiate.html">Initiate Project</a></li>
-            <li><a href="#">Join Project</a></li>
-            <li><a href="#">Manage Project</a></li>
-            <li><a href="#">Manage Funding</a></li>
-            <li><a href="#">Manage Team</a></li>
-            <li><a href="#">Track Budget</a></li>
-            <li><a href="homePage.html">Log Out</a></li>
-        </ul>
-    </nav>
-
-    <!-- Form for Project Initiation -->
-    <h2>Project Initiation</h2>
-
-    <form id="projectForm">
-        <label for="projectTitle">Project Title:</label><br>
-        <input type="text" id="projectTitle" name="projectTitle" required><br><br>
-
-        <label for="projectDescription">Project Description:</label><br>
-        <textarea id="projectDescription" name="projectDescription" required></textarea><br><br>
-
-        <label for="projectObjective">Project Objective:</label><br>
-        <textarea id="projectObjective" name="projectObjective" required></textarea><br><br>
-
-        <label for="projectType">Project Type:</label><br>
-        <select id="projectType" name="projectType" required>
-            <option value="renewableEnergy">Renewable Energy</option>
-            <option value="environment">Environment</option>
-            <option value="sustainableEnergy">Sustainable Energy</option>
-            <option value="waterManagement">Water Management</option>
-            <option value="reforestation">Reforestation</option>
-            <option value="climateEducation">Climate Education</option>
-            <option value="foodManagement">Food Management</option>
-            <option value="transportation">Transportation</option>
-        </select><br><br>
-
-        <label for="projectLocation">Project Location:</label><br>
-        <select id="projectLocation" name="projectLocation" required>
-            <option value="abuDhabi">Abu Dhabi</option>
-            <option value="dubai">Dubai</option>
-            <option value="sharjah">Sharjah</option>
-        </select><br><br>
-
-        <label for="startDate">Start Date:</label><br>
-        <input type="date" id="startDate" name="startDate" required><br><br>
-
-        <label for="endDate">End Date:</label><br>
-        <input type="date" id="endDate" name="endDate" required><br><br>
-
-        <button type="submit">Initiate Project</button>
-    </form>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="websitestyle">
+    <div class="headingformat">
+      <div class="movingMarquee">
+        <div class="textformat">
+          <marquee style="font-size:90%" loop="1">
+            <b>Our mission is to create a platform that fosters collaboration, inspires innovation, and empowers individuals and organizations to take meaningful steps toward a more sustainable future.</b>
+          </marquee>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <h1>Project Initiation</h1>
+  <form id="projectForm">
+    <label for="projectTitle">Project Title:</label>
+    <input type="text" id="projectTitle" name="projectTitle" required><br>
+    <div class="textarea-container">
+      <label for="projectDescription">Project Description:</label>
+      <textarea id="projectDescription" name="projectDescription" required></textarea>
+    </div>
+    <div class="textarea-container">
+      <label for="projectObjective">Project Objective:</label>
+      <textarea id="projectObjective" name="projectObjective" required></textarea>
+    </div>
+    <label for="projectType">Project Type:</label>
+    <select id="projectType" name="projectType" required>
+      <option value="renewableEnergy">Renewable Energy</option>
+      <option value="environment">Environment</option>
+      <option value="sustainableEnergy">Sustainable Energy</option>
+      <option value="waterManagement">Water Management</option>
+      <option value="reforestation">Reforestation</option>
+      <option value="climateEducation">Climate Education</option>
+      <option value="foodManagement">Food Management</option>
+      <option value="transportation">Transportation</option>
+    </select><br>
+    <label for="projectLocation">Project Location:</label>
+    <select id="projectLocation" name="projectLocation" required>
+      <option value="abuDhabi">Abu Dhabi</option>
+      <option value="dubai">Dubai</option>
+      <option value="sharjah">Sharjah</option>
+    </select><br>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required><br>
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate" required><br>
+    <button type="button" id="initiateProjectBtn" onclick="initiateProject()">Initiate Project</button>
+  </form>
+  <div id="thankYouMessage" style="display:none; color: green; margin-top: 20px;">
+    Thank you for initiating the project!
+  </div>
+</body>
 
 </body>
 </html>
