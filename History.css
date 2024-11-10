@@ -1,0 +1,33 @@
+.y {
+    font-size: 50px;
+}
+
+.t {
+    font-size: 30px;
+}
+
+.c {
+    padding: 6px;
+}
+
+.k {
+    padding: 50px 30px 50px 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
