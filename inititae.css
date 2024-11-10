@@ -1,0 +1,98 @@
+
+input {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 15px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 15px;
+  border: groove;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  color: black;
+  border: groove;
+  border-radius: 15px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.b {
+  width: 1000px;
+  height: 300px;
+  padding: 22px;
+  box-shadow: 1px 1px 8px 8px black;
+  font-size: 22px;
+  color: green;
+  margin: auto;
+}
+
+.k {
+  padding: 50px 30px 50px 80px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
