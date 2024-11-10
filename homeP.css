@@ -1,0 +1,104 @@
+.login-container {
+	background-color: transparent;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	position: absolute;
+	right: -150px;
+	width: 350px;
+	height: 700px;
+	padding: 10px;
+}
+
+input {
+	width: 70%;
+	padding: 8px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	background: transparent;
+	border-radius: 15px;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+	color: black;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+.search-container {
+	margin-bottom: 20px;
+}
+
+#searchInput {
+	padding: 10px;
+	font-size: 16px;
+}
+
+#searchButton, #refreshButton {
+	padding: 12px;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.results-container {
+	margin-top: 10px;
+}
+
+.bg {
+	width: 1000px;
+	height: 300px;
+	padding: 22px;
+	box-shadow: 1px 1px 8px 8px black;
+	font-size: 22px;
+	color: green;
+	margin: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+	display: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from { opacity: .4 }
+	to { opacity: 1 }
+}
