@@ -1,54 +1,72 @@
-// JavaScript to check if the current page is "HistoryPage.html"
-document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname.includes("HistoryPage.html")) {
-        // If we're on the History page, add a bold style to the History link
-        document.getElementById("history-link").classList.add("bold");
+// Function to display the login message
+function displayLoginMessage() {
+    const resultsContainer = document.getElementById("resultsContainer");
+    resultsContainer.innerHTML = "<p class='info-message'>Log in to access the share button.</p>";
+}
+
+// Function to clear the results and search input
+function refreshResults() {
+    const resultsContainer = document.getElementById("resultsContainer");
+    resultsContainer.innerHTML = ""; // Clear results
+    document.getElementById("searchInput").value = ""; // Clear search input
+}
+
+// Add an event listener to trigger search on pressing "Enter"
+document.getElementById("searchInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") { // Check if the pressed key is "Enter"
+        displayLoginMessage(); // Call the displayLoginMessage function
     }
 });
 
-// Function to show the login popup
+// Optionally, add an event listener for the search button to call the same function
+document.getElementById("searchButton").addEventListener("click", function() {
+    displayLoginMessage();
+});
+
+
+// Show the login popup
 function showLoginPopup() {
-    document.getElementById("loginPopup").style.display = "flex"; // Change to 'flex' for centering
+    const loginPopup = document.getElementById("loginPopup");
+    loginPopup.style.display = "flex"; // Make the popup visible
 }
 
-// Function to close the login popup
-function closeLoginPopup() {
-    document.getElementById("loginPopup").style.display = "none";
+// Hide the login popup
+function hideLoginPopup() {
+    const loginPopup = document.getElementById("loginPopup");
+    loginPopup.style.display = "none"; // Hide the popup
 }
 
-// Function to check login credentials
-function checkLogin() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+// Handle login form submission
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
 
-    // Basic validation (could be expanded)
-    if (email === "" || password === "") {
-        alert("Please fill in both fields.");
-    } else {
-        // Example of hardcoded credentials (for testing purposes)
-        var validEmail = "user@example.com";
-        var validPassword = "password123";
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-        if (email === validEmail && password === validPassword) {
-            alert("Login successful!");
-            closeLoginPopup();
-        } else {
-            alert("Invalid credentials. Please try again.");
-        }
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Clear previous error messages
+    const emailError = document.getElementById("emailError");
+    const passwordError = document.getElementById("passwordError");
+    emailError.style.display = "none";
+    passwordError.style.display = "none";
+
+    // Validation checks
+    let isValid = true;
+
+    if (!emailRegex.test(email)) {
+        emailError.style.display = "block";
+        isValid = false;
     }
-}
 
-// Function to search for projects (dummy function for now)
-function searchProjects() {
-    var query = document.getElementById("searchInput").value;
-    if (query !== "") {
-        // Placeholder for actual search logic
-        alert("Searching for projects: " + query);
+    if (password.length <= 6) {
+        passwordError.style.display = "block";
+        isValid = false;
     }
-}
 
-// Function to refresh the search results
-function refreshResults() {
-    document.getElementById("searchInput").value = "";
-    document.getElementById("resultsContainer").innerHTML = "";
-}
+    // If validation passes, redirect to home.html
+    if (isValid) {
+        window.location.href = "home.html";
+    }
+});
