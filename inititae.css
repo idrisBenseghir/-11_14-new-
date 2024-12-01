@@ -1,98 +1,165 @@
-
-input {
-  width: 200px;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-  background: transparent;
-  border-radius: 15px;
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-form {
-  max-width: 600px;
-  margin: auto;
+/* Header Section */
+.header-tab {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, #004d40, #00796b);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-input,
-textarea,
-select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-  background: transparent;
-  border-radius: 15px;
-  border: groove;
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
 }
 
-button {
-  width: 200px;
-  padding: 10px;
-  color: black;
-  border: groove;
-  border-radius: 15px;
-  cursor: pointer;
-  background: transparent;
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
-.b {
-  width: 1000px;
-  height: 300px;
-  padding: 22px;
-  box-shadow: 1px 1px 8px 8px black;
-  font-size: 22px;
-  color: green;
-  margin: auto;
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
 }
 
-.k {
-  padding: 50px 30px 50px 80px;
+.nav-link.logout {
+    background-color: #d32f2f;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Verdana, sans-serif;
-}
-
-.mySlides {
-  display: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.nav-link.logout:hover {
+    background-color: #b71c1c;
+    transform: scale(1.1);
 }
 
 .active {
-  background-color: #717171;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.bg {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #00796b;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Form Section */
+form {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 2px solid #004d40;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+#clearFormBtn {
+    background-color: #d32f2f;
+}
+
+#clearFormBtn:hover {
+    background-color: #b71c1c;
+}
+
+/* Footer Section */
+footer {
+    background-color: #004d40;
+    padding: 20px 0;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 4px solid #00796b;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .topic {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .email h1 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.ft {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
