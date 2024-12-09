@@ -13,3 +13,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.history-image');
+    const descriptionContainer = document.getElementById('description-container');
+    const descriptionText = document.getElementById('description-text');
+    const closeButton = document.getElementById('close-button');
+
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            const description = image.getAttribute('data-description');
+            descriptionText.innerHTML = description;
+            descriptionContainer.style.display = 'block';
+        });
+    });
+
+    closeButton.addEventListener('click', function() {
+        descriptionContainer.style.display = 'none';
+    });
+});
+
