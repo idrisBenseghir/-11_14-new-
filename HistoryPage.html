@@ -1,131 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>History</title>
-	<link rel="stylesheet" href="cssFileFormating.css">
-	<link rel="stylesheet" href="sstylesheet.css">
-	<link rel="stylesheet" href="body.css">
+	<link rel="stylesheet" href="cssFileFormating.css">   
 	<link rel="stylesheet" href="HistoryP.css">
 	<script src="HistoryP.js" defer></script>
-	
 </head>
 
 <body>
-	<div class="header-tab">
-		<a href="homePage.html">
-			<div class="header-tab-button">
-				<div class="textAllignment-header-tab">
-					<p style="margin: auto;"><b>Home</b></p>
-				</div>
-			</div>
-		</a>
-		<a href="HistoryPage.html">
-			<div class="header-tab-button2">
-				<div class="textAllignment-header-tab2">
-					<p style="margin: auto;">History</p>
-				</div>
-			</div>
-		</a>
-		<div class="header-tab-button2">
-			<div class="textAllignment-header-tab2">
-				<p style="margin: auto;"></p>
-			</div>
-		</div>
-		<a href="">
-			<div class="header-tab-button2">
-				<div class="textAllignment-header-tab2">
-					<p style="margin: auto;">Join Discussion</p>
-				</div>
-			</div>
-		</a>
-		<div class="header-tab-button2">
-			<div class="textAllignment-header-tab2">
-				<p style="margin: auto;"></p>
-			</div>
-		</div>
-		<div class="header-tab-button2">
-			<button>Login</button>
-		</div>
-		<div id="loginPopup" class="login-container">
-			<form id="loginForm">
-				<label for="email">Email:</label>
-				<input type="email" id="email" required><br>
-				<label for="password"><br><br><br>Password:</label>
-				<input type="password" id="password" required><br>
-				<button type="button" onclick="checkLogin()">Login</button>
-			</form>
-			<button class="close" onclick="closeLoginPopup()">X</button>
-		</div>
-	</div>
+    <header class="header-tab">
+        <nav class="nav-bar">
+            <a href="HomePage.html" class="nav-link">Home</a>
+            <a href="History.html" class="nav-link active">History</a>
+        </nav>
+    </header>
 
+    <div class="bg"></div>
 
+    <div class="websitestyle">
+        <div class="headingformat">
+            <div class="movingMarquee">
+                <div class="textformat">
+                    <div class="marquee">
+                        <b>Our mission is to create a platform that fosters collaboration, inspires innovation, and empowers individuals and organizations to take meaningful steps toward a more sustainable future.</b>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h1>Climate Action Collaboration System</h1>
+            <h2>The History of Climate Action</h2>
+            <br><br><br>
 
-	<div class="websitestyle">
-		<div class="headingformat">
-			<div class="movingMarquee">
-				<div class="textformat">
-					<marquee style="font-size:90% loop=:1">
-						<b>Our mission is to create a platform that fosters collaboration, inspires innovation, and empowers individuals and organizations to take meaningful steps toward a more sustainable future.</b>
-					</marquee>
-					<br>
-				</div>
-			</div>
-			<br>
-			<h1>Climate Action Collaboration System</h1>
+            <section class="history-section">
+                <h2>Milestones in Climate Action</h2>
+                <div class="history-content">
+                    <section class="history-card">
+                        <img src="Pictures/glo.jpeg" alt="Global Warming Awareness" class="history-image" data-description="In 1965, scientists suggested that increasing atmospheric temperatures were caused by carbon dioxide buildup. The term 'global warming' was later coined by Wallace Broecker in 1975, though mainstream awareness took years to follow. United States, 1965">
+                    </section>
 
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src="Pictures/i1.jpg" style="width:100%">
-				</div>
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src="Pictures/i2.jpg" style="width:100%">
-				</div>
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<img src="Pictures/i3.jpg" style="width:100%">
-				</div>
-			</div>
-			<br>
-			<div style="text-align:center">
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-			</div>
-		</div>
+                    <section class="history-card">
+                        <img src="Pictures/earth.jpeg" alt="Earth Day" class="history-image" data-description="Launched in 1970 to raise awareness about environmental issues like pollution and toxic waste, Earth Day has grown into a global event, involving over 200 million participants across 141 countries. United States, April 22, 1970">
+                    </section>
+                </div>
+            </section>
+            <br><br>
+        </div>
 
-		<section class="q">
-			<h1>History</h1>
-			<section>
-				<img src="Pictures/glo.jpeg" alt="Award">
-				<h3>The birth of 'global warming'</h3>
-				<p class="y">In a report called "Restoring the Quality of Our Environment", scientists proposed that increasing temperatures in the atmosphere were caused by a buildup of carbon dioxide. It wasn’t until 1975 that the term “global warming” was coined by geoscientist Wallace Broecker. The issue took years to reach mainstream understanding.</p>
-				<p>United States</p>
-				<p>1965</p>
-			</section>
+        <footer>
+            <div class="content">
+                <div class="right box">
+                    <div class="lower">
+                        <div class="topic">Contact us</div>
+                        <div class="email">
+                            <h1>contact-us@gmail.com</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-			<section>
-				<img src="Pictures/earth.jpeg" alt="Award">
-				<h3>Earth Day</h3>
-				<p>The organizers wanted to raise awareness of concerns such as pollution and toxic waste. Inspired by the anti-war movement led by students, Earth Day has become a global event, with over 200 million participants in 141 countries in 1990.</p>
-				<p>United States</p>
-				<p>April 22, 1970</p>
-			</section>
+    <div id="description-container" class="description-container">
+        <div id="description-text" class="description-text"></div>
+        <button id="close-button" class="close-button">Close</button>
+    </div>
 
-	</div>
-
-	<footer>
-		<div class="content">
-			<div class="right box">
-				<div class="lower">
-					<div class="topic">Contact us</div>
-					<div class="email">
-						<h1>contact-us@gmail.com</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+</body>
+</html>
