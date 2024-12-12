@@ -60,6 +60,6 @@ function refreshResults() {
 
 // Helper Function: Highlight matching terms
 function highlightMatch(text, term) {
-    const regex = new RegExp((${term}), "gi");
+    const regex = new RegExp(`(${term})`, "gi");
     return text.replace(regex, "<span class='highlight'>$1</span>");
 }
